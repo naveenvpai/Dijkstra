@@ -4,10 +4,6 @@
 public class TestDijkstra {
 
     public static void main(String[] args) {
-
-        Dijkstra dij = new Dijkstra();
-
-
         /*
 
         Sample Adjacency Matrix from Clemson Notes
@@ -37,12 +33,12 @@ public class TestDijkstra {
         System.out.println("Adjacency Matrix of the Reading's Sample Graph");
         print(readingAM);
 
-        int[][] test = dij.shortestPaths(0, readingAM);
+        int[][] test = Dijkstra.shortestPaths(0, readingAM);
 
         System.out.println("Dv:");
-        print(test[dij.d]);
+        print(test[Dijkstra.d]);
         System.out.println("Kv:");
-        print(test[dij.k]);
+        print(test[Dijkstra.k]);
     }
 
 
