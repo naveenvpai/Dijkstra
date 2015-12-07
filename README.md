@@ -1,6 +1,7 @@
 An AP Computer Science Project involving an implementation of Dijkstra's Algorithm in Java:
 
 Dijkstra's Algorithm Implementation by Naveen Pai (2° APCS)
+Reading: http://people.cs.clemson.edu/~pargas/courses/cs212/common/notes/ppt/18Dijkstra.ppt
 
 To implement Dijkstra's Algorithm, I worked at multiple stages.
 
