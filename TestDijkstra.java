@@ -10,7 +10,7 @@ public class TestDijkstra {
 
         /*
 
-        Weiss Adjacency Matrix
+        Sample Adjacency Matrix from Clemson Notes
             0 1 2 3 4 5 6 7
         0   0 8 0 0 0 10 0 0
         1   0 0 4 0 10 0 0 0
@@ -23,7 +23,7 @@ public class TestDijkstra {
 
         */
 
-        int[][]weissAM = $(
+        int[][]readingAM = $(
                 $(0, 8, 0, 0, 0, 10, 0, 0),
                 $(0, 0, 4, 0, 10, 0, 0, 0),
                 $(0, 0, 0, 3, 0, 0, 0, 0),
@@ -34,12 +34,10 @@ public class TestDijkstra {
                 $(4, 9, 0, 0, 0, 0, 0, 0)
         );
 
-        int[][] edge = $($(0,0),$(0,0));
+        System.out.println("Adjacency Matrix of the Reading's Sample Graph");
+        print(readingAM);
 
-        System.out.println("Adjacency Matrix of the Bigraph");
-        print(edge);
-
-        int[][] test = dij.shortestPaths(0, edge);
+        int[][] test = dij.shortestPaths(0, readingAM);
 
         System.out.println("Dv:");
         print(test[dij.d]);
